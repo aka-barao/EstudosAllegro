@@ -6,13 +6,13 @@ int olaallegro(int argc, char **argv) {
 	ALLEGRO_DISPLAY *display = NULL;
 
 	if (!al_init()) {
-		fprintf(stderr, "failed to initialize allegro!\n");
+		fprintf(stderr, "Falha ao inicializar o Allegro!\n");
 		return EXIT_FAILURE;
 	}
 
 	display = al_create_display(640, 480);
 	if (!display) {
-		fprintf(stderr, "failed to create display!\n");
+		fprintf(stderr, "Falha ao criar uma janela!\n");
 		return EXIT_FAILURE;
 	}
 
